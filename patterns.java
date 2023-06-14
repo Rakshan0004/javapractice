@@ -36,7 +36,7 @@ public class patterns {
         for (int row = 0; row <= 2 * n; row++) {
             int totalcolsinrow = row > n ? 2 * n - row - 1 : row;
             for (int col = 1; col <= totalcolsinrow; col++) {
-                System.out.print("*");
+                System.out.print("$");
             }
             System.out.println();
         }
