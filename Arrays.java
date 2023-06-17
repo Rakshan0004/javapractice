@@ -1,24 +1,27 @@
+import java.util.Scanner;
 
-public class Arrays {
-    public static int linearsearch(int numbers[], int key) {
-
-        for (int i = 0; i < numbers.length; i++) {
-            if (numbers[i] == key) {
+    // write a linear search for string
+    public static int linearsearch(String menu[], String item) {
+        for (int i = 0; i < menu.length; i++) {
+            if (menu[i].equals(item)) {
                 return i;
             }
-
         }
-        return -1; // this -1 means key is not excisted
+        return -1;
     }
 
-    public static void main(String[] args) {
-        int numbers[] = { 2, 4, 6, 8, 10, 12, 14, 16 };
-        int key = 10;
-        int index = linearsearch(numbers, key);
+    public static void main(String args[]) {
+        String menu[] = { "dosa", "upma", "vada", "samosa", "idly" };
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the menu item : ");
+        String item = sc.nextLine();
+        int index = linearsearch(menu, item);
         if (index == -1) {
-            System.out.println("key npt found");
+            System.out.print("not found");
         } else {
-            System.out.println("key is at index : " + index);
+            System.out.println("item is at the indeax : " + index);
         }
+        /sc.close();
     }
 }
