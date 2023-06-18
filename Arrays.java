@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-    // write a linear search for string
+public class Arrays {
     public static int linearsearch(String menu[], String item) {
         for (int i = 0; i < menu.length; i++) {
             if (menu[i].equals(item)) {
@@ -11,9 +11,8 @@ import java.util.Scanner;
     }
 
     public static void main(String args[]) {
-        String menu[] = { "dosa", "upma", "vada", "samosa", "idly" };
-
         Scanner sc = new Scanner(System.in);
+        String menu[] = { "dosa", "upma", "vada", "samosa", "idly" };
         System.out.println("Enter the menu item : ");
         String item = sc.nextLine();
         int index = linearsearch(menu, item);
@@ -22,6 +21,7 @@ import java.util.Scanner;
         } else {
             System.out.println("item is at the indeax : " + index);
         }
-        /sc.close();
+        sc.close();
     }
+
 }
