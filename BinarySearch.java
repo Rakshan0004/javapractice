@@ -2,10 +2,10 @@ public class BinarySearch {
     // print subarrays
     public static void binary(int numbers[]) {
         for (int i = 0; i < numbers.length; i++) {
-            int start = i;
+
             for (int j = 0; j < numbers.length; j++) {
-                int end = j;
-                for (int k = start; k <= end; k++) { // to print all subarrays we write this loop
+
+                for (int k = i; k <= j; k++) { // to print all subarrays we write this loop
                     System.out.print(numbers[k] + " ");
                 }
                 System.out.println();
