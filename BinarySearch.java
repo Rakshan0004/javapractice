@@ -6,7 +6,7 @@ public class BinarySearch {
             for (int j = 0; j < numbers.length; j++) {
 
                 for (int k = i; k <= j; k++) { // to print all subarrays we write this loop
-                    System.out.print(numbers[k] + " ");
+                    System.out.print(numbers[k] + " "); // subarray
                 }
                 System.out.println();
             }
