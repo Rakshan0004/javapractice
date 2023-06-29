@@ -19,8 +19,13 @@ public class maxsubarraysum {
         System.out.println("max sum = " + maxSum);
     }
 
+    public static void prefixSum(int numbers[]) {
+
+    }
+
     public static void main(String args[]) {
-        int numbers[] = { 2, 4, 6, 8, 10 };
+        int numbers[] = { 2, -4, 6, -3, 10 };
         maxSubarraySum(numbers);
+        // time complexity is O(n^3)
     }
 }
