@@ -1,9 +1,8 @@
-import java.util.*;
 
 public class trappingRainwater {
     public static int trappedwater(int height[]) {
         int n = height.length;
-        int leftmax[] = new int[height.length];
+        int leftmax[] = new int[n];
         leftmax[0] = height[0];
         for (int i = 1; i < n; i++) {
             leftmax[i] = Math.max(height[i], leftmax[i - 1]);
