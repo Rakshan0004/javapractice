@@ -4,6 +4,10 @@ public class overloading {
         return a + b;
     }
 
+    public static int sum(int i, int o, int r) {
+        return i + o + r;
+    }
+
     public static float sum(float f, float g) {
         return f + g;
     }
