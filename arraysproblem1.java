@@ -1,15 +1,15 @@
 public class arraysproblem1 {
     public static int sevensinarray(int array[][]) {
-        int countof7 = 0;
+        int count = 0;
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[0].length; j++) {
                 if (array[i][j] == 7) {
-                    countof7++;
+                    count++;
                 }
             }
-            System.out.println(countof7);
+            System.out.println(count);
         }
-        return countof7;
+        return count;
     }
 
     public static void main(String args[]) {
