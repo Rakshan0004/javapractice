@@ -1,6 +1,12 @@
 import java.util.*;
 
 public class Strings {
+    public static void printletters(String str) {
+        for (int i = 0; i < str.length(); i++) {
+            System.out.print(str.charAt(i) + " ");
+        }
+    }
+
     public static void main(String args[]) {
         char arr[] = { 'a', 'b', 'c', 'd' };
         String str = "abcd";
@@ -20,7 +26,9 @@ public class Strings {
         String firstname = "rakshan";
         String lastname = "chintala";
         String fullname = firstname + " " + lastname;
-        System.out.println(fullname);
+        System.out.println(fullname.charAt(0));
+
+        printletters(fullname);
 
     }
 }
