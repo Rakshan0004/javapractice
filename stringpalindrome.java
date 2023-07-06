@@ -14,7 +14,7 @@ public class stringpalindrome {
     public static float getshortestpath(String path) {
         int x = 0, y = 0;
 
-        for (int i = 0; i < path.length(); i++) {
+        for (int i = 0; i < path.length(); i++) { // O(n)
             char direction = path.charAt(i);
             // south
             if (direction == 'S') {
@@ -32,10 +32,23 @@ public class stringpalindrome {
         return (float) Math.sqrt(X2 + Y2);
     }
 
+    // public static void main(String args[]) {
+    // String str = "racecar";
+    // System.out.println(palindrome(str));
+    // String path = "WNEENESENNN";
+    // System.out.print(getshortestpath(path));
+    // }
+
+    // print largest string
     public static void main(String args[]) {
-        String str = "racecar";
-        // System.out.println(palindrome(str));
-        String path = "WNEENESENNN";
-        System.out.print(getshortestpath(path));
+        // time complexity = if the largest length of string is x then tc = O(x*n)
+        String fruits[] = { "apple", "mango", "banana" };
+        String largest = fruits[0];
+        for (int i = 1; i < fruits.length; i++) {
+            if (largest.compareTo(fruits[i]) < 0) {// lexicographic
+                largest = fruits[i];
+            }
+        }
+        System.out.print(largest);
     }
 }
