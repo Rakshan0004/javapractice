@@ -40,15 +40,23 @@ public class stringpalindrome {
     // }
 
     // print largest string
+    /*
+     * public static void main(String args[]) {
+     * // time complexity = if the largest length of string is x then tc = O(x*n)
+     * String fruits[] = { "apple", "mango", "banana" };
+     * String largest = fruits[0];
+     * for (int i = 1; i < fruits.length; i++) {
+     * if (largest.compareTo(fruits[i]) < 0) {// lexicographic
+     * largest = fruits[i];
+     * }
+     * }
+     * System.out.print(largest);
+     * }
+     */
     public static void main(String args[]) {
-        // time complexity = if the largest length of string is x then tc = O(x*n)
-        String fruits[] = { "apple", "mango", "banana" };
-        String largest = fruits[0];
-        for (int i = 1; i < fruits.length; i++) {
-            if (largest.compareTo(fruits[i]) < 0) {// lexicographic
-                largest = fruits[i];
-            }
+        StringBuilder sb = new StringBuilder("");
+        for (char ch = 'a'; ch <= z; ch++) {
+            sb.append(ch);
         }
-        System.out.print(largest);
     }
 }
