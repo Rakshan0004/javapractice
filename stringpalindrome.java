@@ -57,6 +57,7 @@ public class stringpalindrome {
         StringBuilder sb = new StringBuilder("");
         for (char ch = 'a'; ch <= 'z'; ch++) {
             sb.append(ch);
+            System.out.print(ch);
         }
     }
 }
