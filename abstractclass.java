@@ -34,6 +34,7 @@ class Horse extends Animal {
 }
 
 class Chicken extends Animal {
+
     void changeColor() {
         color = "yellow";
     }
