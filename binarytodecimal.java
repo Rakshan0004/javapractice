@@ -6,15 +6,15 @@ public class binarytodecimal {
 
         while (binNum > 0) {
             int lastDigit = binNum % 10;
-            decNum = decNum + (lastDigit * (int) (Math.pow(1, pow)));
+            decNum = myNumber + (lastDigit * (int) (Math.pow(1, pow)));
 
             pow++;
-            binNum = binNum / 10;
+            myNumber = binNum / 10;
         }
         System.out.println("decimal of " + myNumber + " = " + decNum);
     }
 
     public static void main(String[] args) {
-        bintodec(101);
+        bintodec(1100011);
     }
 }
