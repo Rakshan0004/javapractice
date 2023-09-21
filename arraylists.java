@@ -11,5 +11,11 @@ public class arraylists {
         list.add(5);
 
         System.out.println(list.size());
+
+        // print the arraylist
+        for (int i = 0; i < list.size(); i++) {
+            System.out.print(list.get(i) + " ");
+        }
+
     }
 }
